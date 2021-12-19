@@ -1,0 +1,1022 @@
+body {
+    background-color: rgb(15, 75, 95);
+    display: flex;
+}
+
+
+
+
+
+
+#menuKonfirmasiDelete{
+    width: 400px;
+    height: 150px;
+    background-image: linear-gradient(to right, rgba(84, 83, 97, 0.596), rgba(186, 196, 240, 0.651));
+    position: absolute;
+    top: 170px;
+    left: 30%;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#menuKonfirmasiDelete .asd{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    justify-content: space-around;
+    background-color: rgb(73, 74, 88);
+    padding: 4px;
+}
+
+#menuKonfirmasiDelete .asd .asdsd{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .30s;
+}
+#menuKonfirmasiDelete .asd .asdsd:hover{
+    background-color: rgb(137, 137, 177);
+    color: rgb(0, 0, 0);
+}
+
+#menuKonfirmasiDelete .lj{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-top: -20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ==================================================== header */
+header{
+    width: 100%;
+    display: flex;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    color: aqua;
+    position: fixed;
+    /* border-bottom: 2px solid black; */
+    box-shadow:1px 1px 3px #000000;
+    z-index: 100;
+    
+}
+
+
+
+
+/* logo */
+.container-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.container-logo img {
+    width: 50%;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+
+/* navbar */
+nav{
+    width: 60%;
+    
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(182, 190, 190);
+    font-family:'Arial Narrow', Arial, sans-serif;
+    /* font-size: 1rem; */
+}
+nav ul a:hover li{
+    background-color: rgb(56, 56, 56);
+    color: rgb(199, 226, 226);
+}
+nav ul li {
+    box-shadow:1px 1px 2px #000000;
+    padding: 3px 5px;
+    border-radius: 3px;
+    transition: .30s;
+}
+
+
+
+
+
+
+
+/* options */
+.options{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+.options a {
+    text-decoration: none;
+}
+
+.options a:hover span{
+    background-color: rgb(56, 56, 56);
+    color: rgb(199, 226, 226);
+}
+
+
+.options span {
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color: rgb(182, 190, 190);
+    box-shadow:1px 1px 2px #000000;
+    padding: 3px 5px;
+    border-radius: 3px;
+    transition: .30s;
+}
+
+
+
+
+
+
+main {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(148, 148, 240);
+    position: relative;
+    display: flex;
+    top: 50px;
+}
+
+
+
+
+
+
+
+main #bagian1 {
+    width: 5%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    box-shadow:1px 1px 5px #000000;
+    z-index: 4;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+main #bagian2 {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    box-shadow:1px 1px 5px #000000;
+    z-index: 1;
+}
+
+
+
+main #bagian3 {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    box-shadow:1px 1px 5px #000000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+
+
+
+/* ================================================ bagian1 */
+/* -------------- */
+main #bagian1 .c-icon{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgb(10, 10, 10);
+    border-radius: 10px;
+}
+.bShadow{
+    box-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+main #bagian1 .c-icon:hover{
+    cursor: pointer;
+}
+main #bagian1 .c-icon img {
+    width: 100%;
+    background-color: rgb(85, 92, 92);
+    transition: .30s;
+}
+
+main #bagian1 .c-icon:hover{
+    cursor: pointer;
+}
+main #bagian1 .c-icon:hover img{
+    background-color: rgb(117, 126, 126);
+}
+
+.ruba{
+    background-color: rgb(149, 172, 172);
+}
+
+
+
+
+
+
+/* ======================== menu jew project */
+.menu-new-project{
+    position: fixed;
+    top: 120px;
+    bottom: 120px;
+    left: 450px;
+    right: 450px;
+    background-color: rgb(68, 68, 68);
+    z-index: 1000;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-new-project .ta1{
+    width: 100%;
+    margin-top: 15px;
+}
+.menu-new-project.ta1 tr{
+    text-align: center;
+}
+.menu-new-project .ta1 tr td{
+    text-align: center;
+}
+.menu-new-project .ta1{
+    margin-bottom: 30px;
+}
+
+.menu-new-project .ta1 input {
+    background-color: rgb(131, 130, 130);
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- ta2 */
+/* .menu-new-project .ta2{
+    
+} */
+.menu-new-project .ta2 input {
+    width: 50px;
+    background-color: rgb(131, 130, 130);
+}
+.menu-new-project .ta2 tr{
+    text-align: center;
+}
+.menu-new-project .ta2 tr td{
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/* ------------------------------------- atr warna */
+.menu-new-project .atr-warna{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.menu-new-project .atr-warna .pilih-warna {
+    width: 60%;
+    height: 70px;
+    background: linear-gradient(to right, #290777, #eeb806);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.menu-new-project .kon{
+    width: 100%;
+    /* height: 50px; */
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(49, 49, 49);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-new-project .kon button{
+    font-size: 15px;
+    background-color: rgb(85, 92, 92);
+    cursor: pointer;
+    
+    /* font-weight: bold; */
+}
+.menu-new-project .kon button:hover{
+    background-color: rgb(123, 133, 133);
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-new-project .knan{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(113, 131, 133);
+}
+
+
+
+
+
+
+/* ========================================================================================== bagian2 */
+#bagian2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+/* .muncul{
+    transform: scale(1);
+} */
+#canvas{
+    width: 700px;
+    height: 400px;
+    background-color: rgb(42, 54, 124);
+    box-shadow: 2px 2px 3px black;
+    /* display: none; */
+    transform: scale(0);
+}
+
+
+#nameDiatasCanvas{
+    width: 100%;
+    height: 16px;
+    background-color: rgb(90, 87, 87);
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+#nameDiatasCanvas .namaInput{
+    /* margin-left: 5px; */
+    border-right: 2px solid black;
+    background-color: rgb(172, 165, 165);
+    padding: 0 5px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    /* padding-right: 20px; */
+}
+/* ================================================================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================================== bagian3 */
+#bagian3 .new-project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px black;
+    background-color: rgb(64, 156, 168);
+    transition: .30s;
+}
+#bagian3 .new-project:hover{
+    cursor: pointer;
+}
+#bagian3 a{
+    text-decoration: none;
+}
+#bagian3 .new-project:hover{
+    background-color: rgb(73, 132, 139);
+    color: rgb(199, 226, 226);
+}
+#bagian3 .new-project p {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+#bagian3 .new-project p::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../icon/icons8-plus-+-24.png);
+    background-size: 100%;
+    margin-top: -2px;
+    margin-left: -25px;
+}
+
+/* p::before { 
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  } */
+
+
+
+
+
+
+/* ============================================================== menu pencil */
+#bagian3 #menuPencil{
+    width: 100%;
+    height: 59px;
+    /* background-color: blanchedalmond; */
+    color: rgb(182, 190, 190);
+    font-family:'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+    z-index: 100;
+}
+
+#bagian3 #menuPencil tr td {
+    padding: 3px;
+    font-size: .9rem;
+}
+
+#bagian3 #menuPencil tr td input {
+    width: 50px;
+    background-color: rgb(131, 130, 130);
+}
+
+
+#bagian3 #menuPencil .styleP{
+    width: 100%;
+    margin-top: 10px;
+    /* background-color: #fff; */
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#bagian3 #menuPencil .styleP #stylePencil {
+    background-color: #fff;
+    display: flex;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(170, 164, 164);
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px black;
+    transition: .30s;
+}
+#bagian3 #menuPencil .styleP #stylePencil:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgb(190, 184, 184);
+}
+#bagian3 #menuPencil .styleP #stylePencil:hover ~ .baruC{
+    box-shadow: 2px 2px 3px black;
+}
+
+
+
+#bagian3 #menuPencil .styleP .baruC {
+    background-color: rgb(170, 164, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 23px;
+    overflow: hidden;
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .30s;
+    box-shadow: 1px 1px 2px black;
+    z-index: 90;
+}
+#bagian3 #menuPencil .styleP .tampil{
+    height: 175px;
+    background-color: rgb(170, 164, 164);
+}
+
+
+
+
+#bagian3 #menuPencil .styleP .baruC li{
+    padding: 5px 4px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+#bagian3 #menuPencil .styleP .baruC li:nth-child(1){
+    background-color: rgb(69, 68, 88);
+    color: white;
+}
+#bagian3 #menuPencil .styleP .baruC li:nth-child(1):hover{
+    background-color: rgb(69, 68, 88); 
+    color: white;
+}
+
+#bagian3 #menuPencil .styleP .baruC li:hover{
+    background-color: rgb(212, 207, 207);
+    color: rgb(8, 8, 8);
+}
+
+
+/* ================================================================= menu eraser */
+#bagian3 .menuEraser{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: rgb(170, 164, 164); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    margin-top: 10px;
+    border-bottom: 2;
+    border-bottom: 1px solid rgb(2, 2, 2);
+    padding-bottom: 10px;
+}
+#bagian3 .menuEraser ul{
+    display: flex;
+    /* background-color: #fff; */
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#bagian3 .menuEraser ul li div {
+    box-shadow: 2px 2px 2px black;
+    background-color: rgb(255, 255, 255);
+}
+#bagian3 .menuEraser ul li div:hover{
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+    background-color: rgb(53, 52, 52);
+}
+#bagian3 .menuEraser ul li:nth-child(1) div{
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+}
+#bagian3 .menuEraser ul li{
+    cursor: pointer;
+}
+#bagian3 .menuEraser ul li:nth-child(2) div{
+    width: 19px;
+    height: 19px;
+    display: block;
+    border-radius: 50%;
+}
+
+#bagian3 .menuEraser ul li:nth-child(3) div{
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 50%;
+}
+
+#bagian3 .menuEraser p {
+    color: rgb(182, 190, 190);
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+/* ================================================================= menu dibawah eraser */
+#bagian3 .menuDibawahErser {
+    color: rgb(182, 190, 190);
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+#bagian3 .menuDibawahErser ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#bagian3 .menuDibawahErser ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+#bagian3 .menuDibawahErser ul li div {
+    width: 25px;
+    height: 25px;
+    background-color: cadetblue;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+
+/* ================================================================= menu layer */
+#bagian3 .mLayer{
+    width: 100%;
+    /* background-color: rgb(54, 52, 52); */
+}
+
+
+
+#bagian3 .mLayer .nma-Layer{
+    width: 20%;
+    background-color: rgb(39, 38, 38);
+    padding: 3px;
+    color: white;
+    /* border-top-left-radius: 10px; */
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+#bagian3 .mLayer .lyerDanicon{
+    width: 100%;
+    background-color: rgb(66, 64, 64);
+    height: 200px;
+    display: flex;
+}
+
+#bagian3 .mLayer .lyerDanicon .layer{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(109, 101, 101);
+}
+#bagian3 .mLayer .lyerDanicon .icn-sebelah-layer{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+}
+#bagian3 .mLayer .lyerDanicon .icn-sebelah-layer .icn-ly{
+    width: 22px;
+    height: 22px;
+    background-color: rgb(168, 161, 161);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+}
+#bagian3 .mLayer .lyerDanicon .icn-sebelah-layer .icn-ly:hover{
+    background-color: rgb(207, 202, 202);
+    cursor: pointer;
+}
+#bagian3 .mLayer .lyerDanicon .icn-sebelah-layer .icn-ly img {
+    width: 100%;
+}
+
+
+#bagian3 .menuDeleteP{
+    width: 100%;
+    height: 22px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 5px;
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+    transition: .30s;
+}
+#bagian3 .menuDeleteP:hover{
+    background-color: rgb(226, 219, 219);
+}
+#bagian3 .menuDeleteP p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================ bagian4 */
+main #bagian4 {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    /* background-color: rgb(3, 0, 196); */
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    box-shadow:1px 1px 5px #000000;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+#bagian4 .cl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 69, 69);
+    padding: 2px;
+    box-sizing: border-box;
+}
+#bagian4 .cl p{
+    font-size: .9rem;
+    color: rgb(182, 190, 190);
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+
+#bagian4 .bungkus-w{
+    width: 100%;
+    /* height: 150px; */
+    background-color: rgb(46, 43, 43);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bagian4 .bungkus-w div {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    /* border-radius: 50%; */
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .10s;
+}
+#bagian4 .bungkus-w div:hover{
+    transform: scale(1.3);
+    box-shadow: 1px 1px 2px black;
+}
+
+/* ================= color */
+#bagian4 .bungkus-w div:nth-child(1){
+    background-color: aqua;
+}
+#bagian4 .bungkus-w div:nth-child(2){
+    background-color: rgb(73, 156, 156);
+}
+#bagian4 .bungkus-w div:nth-child(3){
+    background-color: rgb(81, 94, 94);
+}
+#bagian4 .bungkus-w div:nth-child(4){
+    background-color: rgb(73, 156, 98);
+}
+#bagian4 .bungkus-w div:nth-child(5){
+    background-color: rgb(21, 102, 64);
+}
+#bagian4 .bungkus-w div:nth-child(6){
+    background-color: rgb(7, 87, 87);
+}
+#bagian4 .bungkus-w div:nth-child(7){
+    background-color: rgb(56, 26, 187);
+}
+#bagian4 .bungkus-w div:nth-child(8){
+    background-color: rgb(0, 255, 76);
+}
+
+#bagian4 .bungkus-w div:nth-child(9){
+    background-color: rgb(243, 38, 38);
+}
+#bagian4 .bungkus-w div:nth-child(10){
+    background-color: rgb(218, 182, 24);
+}
+#bagian4 .bungkus-w div:nth-child(11){
+    background-color: rgb(17, 123, 155);
+}
+#bagian4 .bungkus-w div:nth-child(12){
+    background-color: rgb(167, 27, 223);
+}
+#bagian4 .bungkus-w div:nth-child(13){
+    background-color: rgb(102, 21, 21);
+}
+#bagian4 .bungkus-w div:nth-child(14){
+    background-color: rgb(0, 0, 0);
+}
+#bagian4 .bungkus-w div:nth-child(15){
+    background-color: rgb(26, 155, 187);
+}
+#bagian4 .bungkus-w div:nth-child(16){
+    background-color: rgb(85, 85, 85);
+}
+
+#bagian4 .bungkus-w div:nth-child(17){
+    background-color: aqua;
+}
+#bagian4 .bungkus-w div:nth-child(18){
+    background-color: rgb(73, 156, 156);
+}
+#bagian4 .bungkus-w div:nth-child(19){
+    background-color: rgb(81, 94, 94);
+}
+#bagian4 .bungkus-w div:nth-child(20){
+    background-color: rgb(73, 156, 98);
+}
+#bagian4 .bungkus-w div:nth-child(21){
+    background-color: rgb(21, 102, 64);
+}
+#bagian4 .bungkus-w div:nth-child(22){
+    background-color: rgb(7, 87, 87);
+}
+#bagian4 .bungkus-w div:nth-child(23){
+    background-color: rgb(56, 26, 187);
+}
+#bagian4 .bungkus-w div:nth-child(24){
+    background-color: rgb(0, 255, 76);
+}
+
+#bagian4 .bungkus-w div:nth-child(25){
+    background-color: rgb(243, 38, 38);
+}
+#bagian4 .bungkus-w div:nth-child(26){
+    background-color: rgb(218, 182, 24);
+}
+#bagian4 .bungkus-w div:nth-child(27){
+    background-color: rgb(17, 123, 155);
+}
+#bagian4 .bungkus-w div:nth-child(28){
+    background-color: rgb(167, 27, 223);
+}
+#bagian4 .bungkus-w div:nth-child(29){
+    background-color: rgb(102, 21, 21);
+}
+#bagian4 .bungkus-w div:nth-child(30){
+    background-color: rgb(0, 0, 0);
+}
+#bagian4 .bungkus-w div:nth-child(31){
+    background-color: rgb(26, 155, 187);
+}
+#bagian4 .bungkus-w div:nth-child(32){
+    background-color: rgb(85, 85, 85);
+}
+
+#bagian4 .bungkus-w div:nth-child(33){
+    background-color: rgb(255, 255, 255);
+}
+#bagian4 .bungkus-w div:nth-child(34){
+    background-color: rgb(59, 41, 221);
+}
+#bagian4 .bungkus-w div:nth-child(35){
+    background-color: rgb(255, 0, 0);
+}
+
+#bagian4 .bungkus-w div:nth-child(36){
+    background-color: rgb(73, 156, 98);
+}
+#bagian4 .bungkus-w div:nth-child(37){
+    background-color: rgb(21, 102, 64);
+}
+#bagian4 .bungkus-w div:nth-child(38){
+    background-color: rgb(7, 87, 87);
+}
+#bagian4 .bungkus-w div:nth-child(39){
+    background-color: rgb(56, 26, 187);
+}
+#bagian4 .bungkus-w div:nth-child(40){
+    background-color: rgb(0, 255, 76);
+}
+
+#bagian4 .bungkus-w div:nth-child(41){
+    background-color: rgb(243, 38, 38);
+}
+#bagian4 .bungkus-w div:nth-child(42){
+    background-color: rgb(218, 182, 24);
+}
+#bagian4 .bungkus-w div:nth-child(43){
+    background-color: rgb(17, 123, 155);
+}
+#bagian4 .bungkus-w div:nth-child(44){
+    background-color: rgb(167, 27, 223);
+}
+#bagian4 .bungkus-w div:nth-child(45){
+    background-color: rgb(102, 21, 21);
+}
+#bagian4 .bungkus-w div:nth-child(46){
+    background-color: rgb(0, 0, 0);
+}
+#bagian4 .bungkus-w div:nth-child(47){
+    background-color: rgb(78, 83, 85);
+}
+#bagian4 .bungkus-w div:nth-child(48){
+    background-color: rgb(221, 22, 188);
+}
+
+#bagian4 .bungkus-w div:nth-child(49){
+    background-color: rgba(58, 19, 233, 0.897);
+}
+#bagian4 .bungkus-w div:nth-child(50){
+    background-color: rgb(91, 88, 110);
+}
+#bagian4 .bungkus-w div:nth-child(51){
+    background-color: rgb(179, 152, 152);
+}
+#bagian4 .bungkus-w div:nth-child(52){
+    background-color: rgb(167, 27, 223);
+}
+#bagian4 .bungkus-w div:nth-child(53){
+    background-color: rgb(102, 21, 21);
+}
+#bagian4 .bungkus-w div:nth-child(54){
+    background-color: rgb(0, 0, 0);
+}
+#bagian4 .bungkus-w div:nth-child(55){
+    background-color: rgb(78, 83, 85);
+}
+#bagian4 .bungkus-w div:nth-child(56){
+    background-color: rgb(221, 22, 188);
+}
+
+#bagian4 .bungkus-w div:nth-child(57){
+    background-color: rgba(58, 19, 233, 0.897);
+}
+#bagian4 .bungkus-w div:nth-child(58){
+    background-color: rgb(95, 124, 86);
+}
+#bagian4 .bungkus-w div:nth-child(59){
+    background-color: rgb(255, 255, 255);
+}
+#bagian4 .bungkus-w div:nth-child(60){
+    background-color: rgb(255, 0, 0);
+}

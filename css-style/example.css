@@ -1,0 +1,406 @@
+    /* body */
+body {
+    background-image: url(../img/embun\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+    /* container-satu */
+.container-satu {
+    width: 960px;
+    /* height: 580px; */
+    background-color: rgb(14, 9, 82); 
+    margin: 10px auto;
+    filter: drop-shadow(5px 5px 5px black);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container-satu ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0,.26);
+    align-items: center;
+    
+}
+
+.container-satu ul li {
+    
+    /* padding: 8px; */
+    box-sizing: border-box;
+  
+    margin-right: 5px;
+}
+
+.container-satu ul li:hover a {
+    color: rgb(188, 255, 2);
+    border-top: 2px solid rgb(4, 0, 255);
+    border-right: 2px solid rgb(166, 255, 2);
+}
+.container-satu ul li a {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px; 
+    padding: 5px;
+    box-sizing: border-box;
+    border-top: 2px solid yellow;
+    border-right: 2px solid rgb(0, 38, 255);
+    transition: .30s;
+    text-decoration: none;
+    color: rgb(104, 191, 241);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-satu ul h1 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    width: 250px;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.container-satu .gambar {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/sunshet\ 2.jpg);
+    overflow: hidden;
+    background-size: 100%;
+    background-position-y: -160px;
+}
+
+.container-satu .content {
+    width: 100%;
+    height: 400px;
+    /* background-color: rgb(197, 216, 226); */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ================================================ */
+/* container */
+.container-satu .content .container2 {
+    width: 100%;
+    height: 370px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+}
+
+
+/* ==================left======================= */
+.container-satu .content .container2 .left {
+    /* background-color: darkslateblue; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+/*================= anak left ===================*/
+.container-satu .content .container2 .left .ateh {
+    background-color: rgb(41, 5, 128);
+    flex: 1.3; 
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.container-satu .content .container2 .left .tangah {
+    /* background-color: rgb(141, 108, 129); */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+}
+.container-satu .content .container2 .left .bawahh {
+    background-color: rgb(30, 179, 16); 
+    flex: 1;
+    border-radius: 5px;
+}
+/* ================================================= */
+
+/* =============aank tangah======================= */
+
+.container-satu .content .container2 .left .tangah .atu {
+    background-color: rgb(30, 179, 16); 
+    flex: 1;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.container-satu .content .container2 .left .tangah .ua {
+    /* background-color: rgb(67, 91, 230); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+/* ========================================================== */
+
+/* ==============anak ua===================== */
+
+/* ====biru==== */
+.container-satu .content .container2 .left .tangah .ua .biru {
+    background-color: royalblue;
+    flex: 1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.container-satu .content .container2 .left .tangah .ua .merah {
+    background-color: rgb(175, 0, 0);
+    flex: 2;
+    border-radius: 5px;
+}
+
+
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+/* =======center======== */
+.container-satu .content .container2 .center {
+    /* background-color: rgb(33, 16, 146); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+/* atas */
+.container-satu .content .container2 .center .atas {
+    background-color: seashell;
+    flex: 1.5;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.container-satu .content .container2 .center .atas .kiri {
+    background-color: rgb(30, 179, 16); 
+    flex: 1;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.container-satu .content .container2 .center .atas .kanan {
+    /* background-color: rgb(86, 129, 82);  */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* =====anakk kanan */
+/* up */
+.container-satu .content .container2 .center .atas .kanan .up {
+    background-color: royalblue;
+    flex: 1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+/* down */
+.container-satu .content .container2 .center .atas .kanan .down {
+    background-color: rgb(175, 0, 0);
+    flex: 2.5;
+    border-radius: 5px;
+}
+
+/* bawah */
+.container-satu .content .container2 .center .bawah {
+    background-color: rgb(41, 5, 128);
+    flex: 1;
+    border-radius: 5px;
+}
+
+
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+
+.container-satu .content .container2 .right {
+    /* background-color: rgb(10, 5, 44); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+/* satu */
+.container-satu .content .container2 .right .satu {
+    background-color: rgb(30, 179, 16); 
+    flex: 1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+/* dua */
+.container-satu .content .container2 .right .dua {
+    /* background-color: rgb(137, 216, 130);  */
+    flex: 1;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+/* anak dua */
+.container-satu .content .container2 .right .dua .kiri {
+    background-color: royalblue;  
+    flex: 1;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.container-satu .content .container2 .right .dua .kanan {
+    background-color: rgb(175, 0, 0);
+    flex: 3;
+    border-radius: 5px;
+}
+
+
+
+/* tiga */
+.container-satu .content .container2 .right .tiga {
+    background-color: rgb(41, 5, 128);
+    flex: 3;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+/* empat */
+.container-satu .content .container2 .right .empat {
+    background-color: royalblue; 
+    flex: 1;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -=========================================== */
+/* ================INFORMASI HERO ===============*/
+
+.container-satu .container1 {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(110, 159, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-satu .container1 span {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/markus.jpg);
+    transition: .30s;
+}
+.container-satu .container1 span:hover {
+    transform:rotateX(34deg);
+    transform:rotatey(50deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================= */
+/* ============================LOGIN=============================== */
+
+.container-login {
+    width: 600px;
+    height: 500px;
+    background-color: rgb(114, 23, 218);
+    box-shadow: (5pc 5pc 5pc black);
+}
+
+
+
+
+
+
+
+
+
+
+
+

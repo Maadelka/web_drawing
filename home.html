@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-reset/reset.css">
+    <link rel="stylesheet" href="css-style/style.css">
+    <title>drawing</title>
+
+</head>
+<body>
+
+
+<header>
+    <div class="container-logo"><img src="logo/myLogo.png" alt=""></div>
+
+    <nav>
+        <ul>
+            <a href="">
+                <li>Example</li>
+            </a>
+            
+            <a href="">
+                <li>Example</li>
+            </a>
+            
+            <a href="">
+                <li>Example</li>
+            </a>
+            
+            <a href="">
+                <li>Example</li>
+            </a>
+            
+            <a href="">
+                <li>Example</li>
+            </a>
+            
+            <a href="">
+                <li>Example</li>
+            </a>
+
+            <a href="">
+                <li>Example</li>
+            </a>
+
+            <a href="">
+                <li>Example</li>
+            </a>
+
+            <a href="">
+                <li>Example</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="options">
+        <a href=""><span>Options</span></a> 
+    </div>
+</header>
+
+
+
+
+
+
+<main>
+
+    <div id="bagian1">
+
+        <div class="c-icon" ><img src="icon/icons8-hand-drag-24.png" alt="" id="img"></div>      
+
+        <div class="c-icon" id="pencil"><img src="icon/icons8-pencil-30.png" alt="" id="imgp"></div>
+
+        <div class="c-icon"><img src="icon/icons8-paint-50.png" alt=""></div>
+
+        <div class="c-icon"><img src="icon/icons8-paint-palette-with-brush-48.png" alt="" id="img"></div>
+
+        <div class="c-icon" id="eraser"><img src="icon/eraser.png" alt="" id="imgE"></div>
+
+        <div class="c-icon" id="textt"><img src="icon/icons8-add-text-50.png" alt="" id="img"></div>
+ 
+        <div class="c-icon"><img src="icon/fill-color.png" alt="" id="img"></div>
+
+        <div class="c-icon"><img src="icon/icons8-grid-50.png" alt="" id="img"></div>
+
+        <div class="c-icon"><img src="icon/icons8-pen-50.png" alt="" id="img"></div>
+
+        <div class="c-icon"><img src="icon/icons8-ruler-50.png" alt="" id="img"></div>
+
+        <div class="c-icon"><img src="icon/icons8-layer-mask-30.png" id="img"></div>
+
+        <div class="c-icon"><img src="icon/icons8-zoom-in-64.png" id="img"></div>
+
+    </div>
+
+
+
+
+
+
+    <!-- ========================================================================================= bagian2 -->
+    <div id="bagian2">
+        <div id="nameDiatasCanvas">
+            <div id="namaHInput" class="namaInput"></div>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================================================================================= create new project -->
+    <div class="menu-new-project" >
+        <table class="ta1">
+            <tr>
+                <td>project name :</td>
+                <td><input type="text" id="inputNameU"></td>
+            </tr>
+
+        </table>
+
+        <table class="ta2">
+            <tr>
+                <td>width :</td>
+                <td><input type="number" id="angka1"></td>
+                <td>max width : <= 700px</td>
+            </tr>
+            <tr>
+                <td>height :</td>
+                <td><input type="number" id="angka2"></td>
+                <td>max height : <= 500px</td>
+            </tr>
+
+        </table>
+
+        <div class="atr-warna">
+            <p>background color</p>
+            <div class="pilih-warna"></div>
+        </div>   
+
+
+        <div class="kon">
+            <button type="button" id="create">Create</button>
+            <button type="button" id="cancel">Cancel</button>
+        </div>
+
+    </div>
+
+
+<!-- -------------------------------------- bagian 3 -->
+    <div id="bagian3">
+        <!-- -----------------------------------------------===============================-- new project -->
+            <div class="new-project" id="new-project">
+                <p>Add new project</p>
+            </div>
+
+
+
+
+            <!-- ---------------------------------------=====================================-- menu pencil -->
+            <div id="menuPencil">
+                <!-- ======= -->
+                <table>
+                    <tr>
+                        <td>pencil size</td>
+                        <td><input type="number" id="nilaiPensil"></td>
+                        <td><button type="submit" id="ukuranPensil">enter</button></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>pencil weight</td>
+                        <td><input type="number"></td>
+                    </tr> -->
+                </table>
+
+
+                <div class="styleP">
+
+                    <div id="stylePencil">pencil style =></div>
+
+                    <ul id="pilihan" class="baruC">
+                        <li>style</li>
+                        <li>crayon</li>
+                        <li>kurama</li>
+                        <li>polkadot</li>
+                        <li>lowpoly</li>
+                        <li>dingdong</li>
+                        <li>bambang</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- --------------------------------===========================================--------menu eraser -->
+            <div class="menuEraser">
+                <p>Eraser weight :</p>
+                <ul>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                </ul>
+            </div>
+
+
+            <!-- -------------------------------------------------- -->
+
+            <div class="menuDibawahErser">
+                <ul>
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>example</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ================================================================================== menu layer -->
+
+            <div class="mLayer">
+
+                <div class="nma-Layer"><p>layer</p></div>
+
+                <div class="lyerDanicon">
+                    <div class="layer"></div>
+
+                    <div class="icn-sebelah-layer">
+
+                        <div class="icn-ly"><img src="icon/icons8-formula-fx-50.png" alt=""></div>
+                        <div class="icn-ly"><img src="icon/icons8-merge-files-50.png" alt=""></div>
+                        <div class="icn-ly"><img src="icon/icons8-eyes-32 (1).png" alt=""></div>
+                        <div class="icn-ly"><img src="icon/icons8-eyes-32.png" alt=""></div>
+                        <div class="icn-ly"><img src="icon/icons8-automatic-contrast-50.png" alt=""></div>
+                        <div class="icn-ly"><img src="icon/icons8-grid-50.png" alt=""></div>
+                      
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuDeleteP" id="menuDelete"><p>delete project</p></div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="bagian4">
+        <div class="cl"><p>Color</p></div>
+
+        <div class="bungkus-w">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+<!-- ====================================================== menu konfirmasi delete -->
+<div id="menuKonfirmasiDelete">
+
+    <div class="lj"><p>Apakah anda yakin ingin menghapus project ini ?? <br> <br> refresh halaman untuk new-project</p></div>
+
+    <div class="asd">
+        <div id="lanjutkan" class="asdsd">lanjutkan</div>
+        <div id="batalkan" class="asdsd">batalkan</div>
+    </div>
+</div>
+
+
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
