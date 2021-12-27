@@ -776,6 +776,8 @@ main #bagian3 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
+    background: linear-gradient(to right, #4c5245, #a39898);
+    padding: 4px;
 }
 
 
@@ -783,6 +785,12 @@ main #bagian3 {
     width: 30px;
     height: 30px;
     overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .30s;
+}
+#bagian3 .undo-redo .uer:hover {
+    background-color: rgb(202, 165, 165);
 }
 
 #bagian3 .undo-redo .uer img{
