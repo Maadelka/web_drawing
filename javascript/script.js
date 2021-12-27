@@ -8,6 +8,7 @@ var canvasW = canvas.width;
 var canvasH = canvas.height;
 
 
+
 // =============================================================== event menampilkan menu new project
 var menuNewP = document.querySelector('.menu-new-project');
 
@@ -112,12 +113,13 @@ pencil.addEventListener('click', function(e){
 
   ctx.canvas.addEventListener('mousemove', function(event){
 
-    // var mouseX = event.clientX - ctx.canvas.offsetLeft - ctx.canvas.offsetLeft - 20;
-    // var mouseY = event.clientY - ctx.canvas.offsetTop - ctx.canvas.offsetTop;
+    // var mouseX = event.clientX;
+    // var mouseY = event.clientY;
 
-    var mouseX = event.clientX - 108;
-    var mouseY = event.clientY - 100;
+    var mouseX = event.clientX - 100;
+    var mouseY = event.clientY - 135;
   
+
     ctx.beginPath();
     ctx.fillStyle = warna;
     ctx.fillRect(mouseX,mouseY, w, h);
@@ -145,20 +147,23 @@ eraser.addEventListener('click', function(e){
 
   ctx.canvas.addEventListener('mousemove', function(event){
 
-    var mouseX = event.clientX - ctx.canvas.offsetLeft - ctx.canvas.offsetLeft - 20;
-    var mouseY = event.clientY - ctx.canvas.offsetTop - ctx.canvas.offsetTop;
+    // var mouseX = event.clientX - ctx.canvas.offsetLeft - ctx.canvas.offsetLeft - 20;
+    // var mouseY = event.clientY - ctx.canvas.offsetTop - ctx.canvas.offsetTop;
+
+    var mouseX = event.clientX - 100;
+    var mouseY = event.clientY - 135;
   
     // ======================================================== eraser
     if(wi == 20){
       ctx.beginPath();
-      ctx.clearRect(mouseX,mouseY,25,25);
+      ctx.clearRect(mouseX,mouseY,wi,wi);
       ctx.closePath(); 
     }
   });
 });
 
 // ===============================================================================keydown&up for eraser
-window.addEventListener('keydown', function(e){
+window.addEventListener('keydown', function(e){DOMPointReadOnly
   if(e.key == 'd'){
     wi = 20;
   }else if(e.key == ';'){
