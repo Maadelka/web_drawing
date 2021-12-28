@@ -854,6 +854,7 @@ main #bagian4 {
 #bagian4 .bungkus-w div:hover{
     transform: scale(1.3);
     box-shadow: 1px 1px 2px black;
+    box-sizing: border-box;
 }
 
 /* ================= color */
