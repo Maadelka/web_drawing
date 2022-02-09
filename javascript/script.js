@@ -7,8 +7,6 @@ canvas.height = canvas.scrollHeight;
 var canvasW = canvas.width;
 var canvasH = canvas.height;
 
-
-
 // =============================================================== event menampilkan menu new project
 var menuNewP = document.querySelector('.menu-new-project');
 
@@ -18,15 +16,12 @@ newProject.addEventListener('click', function(){
   menuNewP.style.display = 'flex';
 });
 
-
 // hasil input user
-
 // user ngetik nama project
 
 var namaInput = document.getElementById('namaHInput');
 var widthI;
 var heightI;
-
 // ----------------------------------------------- confirm menampilkan canvas
 var confirm = document.getElementById('create');
 
@@ -39,7 +34,6 @@ confirm.addEventListener('click', function(){
   // var heightI = 200;
 
   menuDelete.style.display = 'flex';
-  
   menuNewP.style.display = 'none';
   canvas.style.transform = 'scale(1)';
   namaInput.innerHTML = inpuNameU;
@@ -52,8 +46,6 @@ var batal = document.getElementById('cancel');
 batal.addEventListener('click', function(){
   menuNewP.style.display = 'none';
 });
-
-
 
 // ===========================================================================ketika delete di click
 var konfirmasiDelete = document.getElementById('menuKonfirmasiDelete');
@@ -76,10 +68,6 @@ lanjutkan.addEventListener('click', function(){
 batalkan.addEventListener('click',function(){
   konfirmasiDelete.style.display = 'none';
 })
-
-
-
-
 // ============================================================================== ketika icon pencil di click
 var warna;
 var r;
@@ -91,16 +79,13 @@ window.addEventListener ('mousedown', function() {
   h = nilaiPensil;
   r = 5;
 });
-
 // ---------------------------------------------- mouseup
 window.addEventListener ('mouseup', function() {
   w = false;
   h = false;
   r = false;
 });
-
 let saf = document.querySelector('#bagian3');
-
 let bagian1 = document.querySelector('#bagian1');
 let imgp = document.querySelector('#imgp');
 let menuPencil = document.getElementById('menuPencil');
@@ -129,22 +114,15 @@ pencil.addEventListener('click', function(e){
     // ctx.arc(mouseX,mouseY, r, 0, 2*Math.PI);
     // ctx.stroke();
   });
-
 });
-
-
-
 // ============================================================================== ketika icon eraser di click
 var wi;
-
 let imgE = document.querySelector('#imgE');
-
 const eraser = document.getElementById('eraser');
 eraser.addEventListener('click', function(e){
 
   imgE.style.backgroundColor = 'rgb(149, 172, 172)';
   imgp.style.backgroundColor = 'rgb(85, 92, 92)';
-
   ctx.canvas.addEventListener('mousemove', function(event){
 
     // var mouseX = event.clientX - ctx.canvas.offsetLeft - ctx.canvas.offsetLeft - 20;
@@ -152,7 +130,6 @@ eraser.addEventListener('click', function(e){
 
     var mouseX = event.clientX - 100;
     var mouseY = event.clientY - 135;
-  
     // ======================================================== eraser
     if(wi == 20){
       ctx.beginPath();
@@ -161,7 +138,6 @@ eraser.addEventListener('click', function(e){
     }
   });
 });
-
 // ===============================================================================keydown&up for eraser
 window.addEventListener('keydown', function(e){DOMPointReadOnly
   if(e.key == 'd'){
@@ -179,10 +155,6 @@ window.addEventListener('keyup', function(e){
   }
 })
 
-
-
-
-
 // ====================================================================== menu style pencil
 let pilihan =document.getElementById('pilihan');
 let stylePencil = document.getElementById('stylePencil');
@@ -191,8 +163,6 @@ stylePencil.addEventListener('click', function(){
   // stylePencil.style.backgroundColor = 'blue';
   pilihan.classList.toggle("tampil");
 });
-
-
 
 // ================================================================================ ubah ukura pensil
 var nilaiPensil;
